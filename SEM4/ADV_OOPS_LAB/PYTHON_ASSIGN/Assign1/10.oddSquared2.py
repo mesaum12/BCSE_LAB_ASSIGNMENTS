@@ -1,0 +1,5 @@
+list2=list(map(lambda x:x*x,range(1,20)))
+listfinal=list(filter(lambda x:x%2==1,list2))
+print(list2)
+print("Odd Squared numbers:")
+print(listfinal)

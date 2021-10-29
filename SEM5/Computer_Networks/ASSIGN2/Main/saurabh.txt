@@ -1,0 +1,5 @@
+Hello , this is the test packet for the assignment in which is to be converted into frames of size 512 bits 
+which is the standard ethernet packet size .Then that packet must be sent to the channel in which error is to be 
+injected which is further sent to the server .The protocols used are Stop N Wait , Go Back N and 
+Selective Repeat Protocol .These protocols are to be used for sending the data packets and according to the 
+various algorithms we need to ensure the resending of the unacknowledged packet..
