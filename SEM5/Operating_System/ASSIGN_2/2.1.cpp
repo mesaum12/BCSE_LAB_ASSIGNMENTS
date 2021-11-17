@@ -37,27 +37,27 @@ void Read_Process_Data(string filename,queue<pair<Process,int> > &Arrival_Time,i
    while (file >> current_word)
    {
         if(current_word=="-1"){
-            n++;
+            n++;//tracks the number of processes read till now 
             int id=v[0];
             Process p(id);
             bool flag=true;
             for(int i=3;i<v.size();i++){
                 if(flag)
                 {
-                    p.burst_time.push(v[i]);
-                    p.total_burst_time+=v[i];
+                    p.burst_time.push(v[i]);//store in the cpu-burst queue
+                    p.total_burst_time+=v[i];// add the total burst time for the process
                 }
-                else p.io_time.push(v[i]);
+                else p.io_time.push(v[i]); //else push to the i/o queue
                 flag=!flag;
             }
-            Arrival_Time.push({p,v[2]});
-            Arrival_Time_Map[p.job_id]=v[2];
-            mp[p.job_id]=p.total_burst_time;
+            Arrival_Time.push({p,v[2]});//pair (process p,arrivaltime for process p)
+            Arrival_Time_Map[p.job_id]=v[2]; //store the arrival time for the process p
+            mp[p.job_id]=p.total_burst_time; // store the total burst time for process p 
             v.clear();
         }else
             v.push_back(stoi(current_word));
     }
-	file.close();
+	file.close(); //reading over , close the file now 
 
 }
 void First_Come_First_Serve(string filename)
@@ -114,13 +114,16 @@ void First_Come_First_Serve(string filename)
     float avg_turnaround_time=0,avg_waiting_time=0;
 
     for(auto itr:Completion_Time)
-    {
+    {  
+      
        int value1=itr.second-Arrival_Time_Map[itr.first];
        int value2=value1-mp[itr.first];
        cout<<"JobId:"<<itr.first<<" Turnaround Time:"<<value1<<" Waiting Time:"<<value2<<"\n";
        avg_turnaround_time+=value1;
        avg_waiting_time+=value2;
+       
     }
+
     cout<<"The average turnaround time is :"<<avg_turnaround_time/n<<"\n";
     cout<<"The average waiting time is :"<<avg_waiting_time/n<<"\n";
     
@@ -132,7 +135,7 @@ void Priority_Scheduling(string filename)
     queue<pair<Process,int>> Process_Arrival_Queue;
     unordered_map<int,int> Completion_Time;
     vector<Process> Input_Output; 
-    priority_queue<Process> ready_queue;
+    priority_queue<Process> ready_queue;//priority queue instead of normal queue
     unordered_map<int ,int > Arrival_Time_Map;
     unordered_map<int,int> mp;
 
@@ -181,11 +184,13 @@ void Priority_Scheduling(string filename)
 
     for(auto itr:Completion_Time)
     {
+       //cout<<"\n";
        int value1=itr.second-Arrival_Time_Map[itr.first];
        int value2=value1-mp[itr.first];
        cout<<"JobId:"<<itr.first<<" Turnaround Time:"<<value1<<" Waiting Time:"<<value2<<"\n";
        avg_turnaround_time+=value1;
        avg_waiting_time+=value2;
+       //cout<<"\n";
     }
     cout<<"The average turnaround time is :"<<avg_turnaround_time/n<<"\n";
     cout<<"The average waiting time is :"<<avg_waiting_time/n<<"\n";
@@ -248,11 +253,13 @@ void Round_Robin(string filename)
 
     for(auto itr:Completion_Time)
     {
+       //cout<<"\n";
        int value1=itr.second-Arrival_Time_Map[itr.first];
        int value2=value1-mp[itr.first];
        cout<<"JobId:"<<itr.first<<" Turnaround Time:"<<value1<<" Waiting Time:"<<value2<<"\n";
        avg_turnaround_time+=value1;
        avg_waiting_time+=value2;
+       //cout<<"\n";
     }
     cout<<"The average turnaround time is :"<<avg_turnaround_time/n<<"\n";
     cout<<"The average waiting time is :"<<avg_waiting_time/n<<"\n";
@@ -260,9 +267,9 @@ void Round_Robin(string filename)
 }
 int main()
 {
-    string filename="t3.txt";
+    string filename="ProcessDataSample.txt";
     //Case 1 : First Come First Serve Algorithm
-    cout<<"-------First Come First Server -------\n";
+    cout<<"-------First Come First Serve -------\n";
     First_Come_First_Serve(filename);
     
     cout<<"\n";
