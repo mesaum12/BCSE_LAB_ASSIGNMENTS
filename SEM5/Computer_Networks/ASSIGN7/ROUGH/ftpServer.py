@@ -1,0 +1,11 @@
+import socket
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.bind((socket.gethostname(),12345))
+s.listen(1)
+clientsocket,address=s.accept()
+print(f"Connection from {address} has been established.")
+filename=input("Enter the name of the file to be sent to the client:")
+file=open(filename,"rb")
+file_data=file.read(1024)
+clientsocket.send(file_data)
+print("Data has been sent successfully")
