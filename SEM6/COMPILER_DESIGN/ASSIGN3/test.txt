@@ -1,0 +1,7 @@
+while()
+{
+    {
+        int number=0;
+    };
+}
+}

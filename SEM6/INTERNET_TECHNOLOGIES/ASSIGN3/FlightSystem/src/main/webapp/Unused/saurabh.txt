@@ -1,0 +1,90 @@
+%>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/deals.jpg" alt="">
+              <!-- <span class="card-title"><%=resultSet.getString("sourceCity") %> To <%=resultSet.getString("destinationCity") %></span> -->
+              <span class="card-title"><%=o.getSourceCity() %> To <%=o.getDestinationCity() %></span>
+            </div>
+            <div class="card-content">
+             
+              <p>Grab the best Offer</p>
+               <p style="color:red; font-weight:bold;">Discount Offered:<%=resultSet.getFloat("discount") %></p>
+               <%System.out.println(resultSet.getFloat("discount")); %>
+               <p>Deal Starts On:<%=resultSet.getDate("offerStartDate") %></p>
+               <p>Deal Ends On:<%=resultSet.getDate("offerEndDate") %></p>
+               <p>Start Time (IST):<%=startTime %></p>
+               <p>End Time(IST) :<%=endTime %></p>
+            </div>
+          </div>
+        </div>
+        <% 
+		  }
+			
+			} catch (Exception e) {
+			e.printStackTrace();
+			}
+		%>
+		
+		
+		/*try{ 
+			connection = DriverManager.getConnection(connectionUrl, userId, password);
+			statement=connection.createStatement();
+			//String sql ="SELECT * FROM offers2";
+
+			
+			//String sql2="select * from offers2 where expiryDate>=?";
+			
+			String sql2="select * from flightdetails2 where discount is not NULL and ((offerEndDate>? and offerStartDate<?) or (offerStartDate=? and offerEndDate>=? and offerStartTime<=? and offerEndTime>?))";
+           PreparedStatement stmt = connection.prepareStatement(sql2);
+           //stmt.setString(1, new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+           stmt.setString(1, new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+           stmt.setString(2, new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+           stmt.setString(3, new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+           stmt.setString(4, new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+           stmt.setString(5, new SimpleDateFormat("HH:mm:ss").format(new Date()));
+           stmt.setString(6, new SimpleDateFormat("HH:mm:ss").format(new Date()));
+           // Extract data from result set 
+           
+           System.out.println(stmt.toString());
+           System.out.println("Before the stmt");
+			resultSet = stmt.executeQuery();
+			System.out.println(resultSet.toString());
+		System.out.println("After the stmt---");
+		while(resultSet.next()){
+			
+			System.out.println("Inside the result set -----------------------------");
+			Time startTime=resultSet.getTime("offerStartTime");
+			Time endTime=resultSet.getTime("offerEndTime");*/
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				   
+//		   while(resultSet.next()){
+//				
+//				System.out.println("Inside the result set -----------------------------");
+//				Offer offer=new Offer();
+//				offer.setSourceCity(resultSet.getString("sourceCity"));
+//				offer.setDestinationCity("destinationCity");
+//				offer.setDiscountPercent(resultSet.getFloat("discount"));
+//				offer.setOfferStartDate(resultSet.getDate("offerStartDate"));
+//				System.out.print(offer.getOfferStartDate());
+//				offer.setOfferEndDate(resultSet.getDate("offerEndDate"));
+//				offer.setOfferStartTime(resultSet.getTime("offerStartTime"));
+//				offer.setOfferEndTime(resultSet.getTime("offerEndTime"));
+//				offerlist.add(offer);
+//		   }
+//		   
+//		}
+//		catch(Exception e)
+//		{
+//			e.printStackTrace();
+//		}

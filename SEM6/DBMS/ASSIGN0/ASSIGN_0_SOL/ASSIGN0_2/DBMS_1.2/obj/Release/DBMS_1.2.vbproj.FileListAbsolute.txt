@@ -1,0 +1,14 @@
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\bin\Release\DBMS_1.2.exe.config
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\bin\Release\DBMS_1.2.exe
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\bin\Release\DBMS_1.2.pdb
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\bin\Release\DBMS_1.2.xml
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1.2.vbproj.AssemblyReference.cache
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1._2.Form1.resources
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1._2.Form2.resources
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1._2.Resources.resources
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1._2.UserControl1.resources
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1.2.vbproj.GenerateResource.cache
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1.2.vbproj.CoreCompileInputs.cache
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1.2.exe
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1.2.xml
+C:\Users\saura\Desktop\BCSE\COLLEGE\SEM6\DBMS\ASSIGN0\DBMS_1.2\DBMS_1.2\obj\Release\DBMS_1.2.pdb

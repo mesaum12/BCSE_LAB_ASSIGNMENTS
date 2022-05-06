@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 5.0.0, 2021-11-15T19:36:37. -->
+<!-- Written by QtCreator 5.0.0, 2022-02-04T20:46:29. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -103,7 +103,7 @@
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:/Users/saura/Desktop/BCSE/CS005/COLLEGE/SEM5/Computer Graphics/LAB/ASSIGN( ALL_IN_ONE )</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:/Users/saura/Desktop/BCSE/CS005/COLLEGE/SEM5/Computer Graphics/LAB/trial</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:/Users/saura/Desktop/BCSE/CS005/COLLEGE/SEM5/Computer Graphics/LAB/ASSIGN( ALL_IN_ONE )</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -241,9 +241,8 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">BCSEIII2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/saura/Desktop/BCSE/CS005/COLLEGE/SEM5/Computer Graphics/LAB/ASSIGN( ALL_IN_ONE )/BCSEIII.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/saura/Desktop/BCSE/CS005/COLLEGE/SEM5/Computer Graphics/LAB/ASSIGN( ALL_IN_ONE )/BCSEIII.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/saura/Desktop/BCSE_SESSIONALS_2019-23/SEM5/Computer_Graphics/ASSIGN/BCSEIII.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/saura/Desktop/BCSE_SESSIONALS_2019-23/SEM5/Computer_Graphics/ASSIGN/BCSEIII.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
